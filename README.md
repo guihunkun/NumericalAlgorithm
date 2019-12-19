@@ -34,6 +34,27 @@ void GaussElimination(vector<vector<double> >& A, vector<double>& b, vector<doub
 % i        The number of iterations
 
 
+4. GaussTriangleNumericalIntegration.m
+function [weight, gausspoints] = GaussTriangleNumericalIntegration(precision)
+% Calculate numerical integration on Triangle
+% Input:
+% precision       integration precision
+
+% Output: 
+% weight          integration weight
+% gausspoints     integration points
+
+
+5. TestForGauTriNumInt.m
+% Just for test GaussTriangleNumericalIntegration
+% If change triangle points exact integration need change 
+
+
+
+
+
+
+
 
 
 
