@@ -50,6 +50,18 @@ function [weight, gausspoints] = GaussTriangleNumericalIntegration(precision)
 % If change triangle points exact integration need change 
 
 
+6.ConjugateGradient.m
+function [x,n] = ConjugateGradient(A, b, x0, epsa)
+% solve Ax = b; 
+% Input: 
+        % A Matrix
+        % b Vector
+        % x0 Initial value 
+        % epsa Precision 
+ % Output:
+        % x approximate solution
+        % b the maximum number of iterations
+        
 
 
 
