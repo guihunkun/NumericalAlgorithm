@@ -50,7 +50,7 @@ function [weight, gausspoints] = GaussTriangleNumericalIntegration(precision)
 % If change triangle points exact integration need change 
 
 
-6.ConjugateGradient.m
+6. ConjugateGradient.m
 function [x,n] = ConjugateGradient(A, b, x0, epsa)
 % solve Ax = b; 
 % Input: 
@@ -63,10 +63,28 @@ function [x,n] = ConjugateGradient(A, b, x0, epsa)
         % b the maximum number of iterations
         
 
+7. ChangeP1toP2Mesh.m
+function [p,t] = ChangeP1toP2Mesh(p,t)
+%
+%  Input:  p: nodes
+%          t: index of node
+%  Each triangle is described by three points.
+
+%  Output: p: nodes
+%          t: index of node
+%  Each triangle is described by six points.
 
 
 
+8. Tri2Edge.m
+function edges = Tri2Edge(p,t)
+%  Input:  p: nodes
+%          t: index of node
+%  Each triangle is described by three points.
+%  Output: edges: return the element edge numbers.
 
 
+9. TestforChangeP1toP2Mesh.m
+% Just for test ChangeP1toP2Mesh
 
 
