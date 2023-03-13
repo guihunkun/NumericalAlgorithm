@@ -7,7 +7,7 @@ function [x,n] = ConjugateGradient(A, b, x0, epsa)
         % epsa Precision 
  % Output:
         % x approximate solution
-        % b the maximum number of iterations
+        % n the maximum number of iterations
         
         x = x0;
         r = A*x0-b;
