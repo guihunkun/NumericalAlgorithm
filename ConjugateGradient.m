@@ -24,3 +24,4 @@ function [x,n] = ConjugateGradient(A, b, x0, epsa)
             p = p2;
         end
 end
+
