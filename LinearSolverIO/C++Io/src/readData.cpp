@@ -73,8 +73,11 @@ int main(int argc, char *argv[])
     mm_write_mtx_crd_size(stdout, M, N, nz);
     for (i=0; i<nz; i++) {
         //fprintf(stdout, "%d %d %20.19g\n", I[i]+1, J[i]+1, val[i]);
-				A[I[i]][J[i]] = val[i];
-		}
+	A[I[i]][J[i]] = val[i];
+	if(mm_is_symmetric(matcode)) {
+          A[J[i]][I[i]] = val[i];
+        }    
+    }
 
 #endif
 
